@@ -98,10 +98,10 @@ function calculate() {
     summaryText =
 `📅 วันที่: ${date}
 👥️️ จำนวนคนทั้งหมด : ${numPeople} คน
-👤 จำนวนคนที่ต้องหารเฉลี่ย : ${remainingPeople} คน
 👤 จำนวนคนที่ตี 1 ชั่วโมง : ${numOneHour}คน
+👤 จำนวนคนที่ต้องหารเฉลี่ย : ${remainingPeople} คน
 ---
-💸 ค่าใช้จ่ายรวม (ยังไม่หัก 1 ชม.)
+💸 ค่าใช้จ่ายรวมทั้งหมด
 🏸 ค่าคอร์ท : ${totalCourt.toFixed(2)} บาท
 🪶 ค่าลูก (1): ${shuttleRate1PerPiece.toFixed(2)} บาท/ลูก x ${numShuttle1} ลูก = ${(shuttleRate1PerPiece * numShuttle1).toFixed(2)} บาท
 🪶 ค่าลูก (2): ${shuttleRate2PerPiece.toFixed(2)} บาท/ลูก x ${numShuttle2} ลูก = ${(shuttleRate2PerPiece * numShuttle2).toFixed(2)} บาท
@@ -110,7 +110,6 @@ function calculate() {
 ---
 💵 หักคนที่มาตี 1 ชั่วโมง (50 บาท/คน) : ${oneHourCost.toFixed(2)} บาท
 💰 รวมยอดหลังหักคนตี 1 ชม : ${totalAdjusted.toFixed(2)} บาท
-
 ---
 👤 จำนวนคนที่ตี 1 ชั่วโมง จ่าย 50 บาท : ${numOneHour}คน
 💸 ค่าใช้จ่ายต่อคน : ${perPerson} บาท `;
